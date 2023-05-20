@@ -181,3 +181,157 @@
 //     return `${string1} ${string2}`;
 // }
 
+
+
+// Ex 13. Is he gonna survive?
+
+// A hero is on his way to the castle to complete his mission. However, he's been told that the castle is surrounded with a couple of powerful dragons! each dragon takes 2 bullets to be defeated, our hero has no idea how many bullets he should carry.. Assuming he's gonna grab a specific given number of bullets and move forward to fight another specific given number of dragons, will he survive?
+
+// Return true if yes, false otherwise :)
+
+// function hero(bullets, dragons){ 
+//     return bullets >= dragons * 2 ;
+// }
+
+
+
+// Ex 14. Determine offspring sex based on genes XX and XY chromosomes
+
+// The male gametes or sperm cells in humans and other mammals are heterogametic and contain one of two types of sex chromosomes. They are either X or Y. The female gametes or eggs however, contain only the X sex chromosome and are homogametic.
+// The sperm cell determines the sex of an individual in this case. If a sperm cell containing an X chromosome fertilizes an egg, the resulting zygote will be XX or female. If the sperm cell contains a Y chromosome, then the resulting zygote will be XY or male.
+// Determine if the sex of the offspring will be male or female based on the X or Y chromosome present in the male's sperm.
+// If the sperm contains the X chromosome, return "Congratulations! You're going to have a daughter."; If the sperm contains the Y chromosome, return "Congratulations! You're going to have a son.";
+
+// function chromosomeCheck(sperm) {
+//     if ( sperm === 'XY') {
+//         return "Congratulations! You're going to have a son.";
+//     } else {
+//         return "Congratulations! You're going to have a daughter.";
+//     }
+// }
+
+
+
+// Ex 15. Grasshopper - Check for factor
+
+// This function should test if the factor is a factor of base.
+// Return true if it is a factor or false if it is not.
+
+// About factors
+
+// Factors are numbers you can multiply together to get another number.
+
+// 2 and 3 are factors of 6 because: 2 * 3 = 6
+
+// You can find a factor by dividing numbers. If the remainder is 0 then the number is a factor.
+// You can use the mod operator (%) in most languages to check for a remainder
+// For example 2 is not a factor of 7 because: 7 % 2 = 1
+
+// Note: base is a non-negative number, factor is a positive number.
+
+// function checkForFactor (base, factor) {
+//     if ( base % factor === 0 ) {
+//       return true;
+//     } else if ( base % factor ) {
+//       return false;
+//     }
+// }
+
+
+
+// Ex 16. Opposite number
+
+// Very simple, given an integer or a floating-point number, find its opposite.
+
+// Examples:
+
+// 1: -1
+// 14: -14
+// -34: 34
+
+// function opposite(number) {
+//     return -number;
+// }
+
+
+// Ex 17. Return Negative
+
+// In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
+
+// Examples
+// makeNegative(1);    // return -1
+// makeNegative(-5);   // return -5
+// makeNegative(0);    // return 0
+// makeNegative(0.12); // return -0.12
+// Notes
+// The number can be negative already, in which case no change is required.
+// Zero (0) is not checked for any specific sign. Negative zeros make no mathematical sense.
+
+// function makeNegative(num) {
+//     return num > 0 ? -num : num;
+// }
+
+
+
+// Ex 18. Calculate BMI
+
+// Write function bmi that calculates body mass index (bmi = weight / height2).
+
+// if bmi <= 18.5 return "Underweight"
+// if bmi <= 25.0 return "Normal"
+// if bmi <= 30.0 return "Overweight"
+// if bmi > 30 return "Obese"
+
+// function bmi(weight, height) {  
+//     const index = weight / height ** 2;
+    
+//     if ( index <= 18.5) {
+//       return "Underweight";
+//     } else if ( index <= 25.0) {
+//       return  "Normal";
+//     } else if ( index <= 30.0) {
+//       return "Overweight";
+//     } else if ( index > 30) {
+//       return "Obese";
+//     }
+// }
+
+
+
+// Ex 19. Quadrants 
+
+// Task
+// Given a point in a Euclidean plane (x and y), return the quadrant the point exists in: 1, 2, 3 or 4 (integer). x and y are non-zero integers, therefore the given point never lies on the axes.
+
+// Examples
+// (1, 2)     => 1
+// (3, 5)     => 1
+// (-10, 100) => 2
+// (-1, -9)   => 3
+// (19, -56)  => 4
+
+// function quadrant(x, y) {
+//     if ( x > 0 && y > 0 ) {
+//       return 1;
+//     } else if ( x < 0 && y > 0) {
+//       return 2;
+//     } else if ( x < 0 && y < 0) {
+//       return 3;
+//     } else {
+//      return 4;
+//     }
+// }
+
+
+// Ex 20. Thinkful - Logic Drills: Traffic light
+
+// You're writing code to control your town's traffic lights. You need a function to handle each change from green, to yellow, to red, and then to green again.
+// Complete the function that takes a string as an argument representing the current state of the light and returns a string representing the state the light should change to.
+
+// For example, when the input is green, output should be yellow.
+
+function updateLight(current) {
+  
+    //your code here!
+  
+}
